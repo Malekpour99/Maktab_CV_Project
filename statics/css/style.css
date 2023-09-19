@@ -1778,7 +1778,7 @@ section.parallax-section.parallax-sec-half-left .horizonral-subtitle span {
 	transform: rotate(90deg);
 }
 .section-title {
-	padding: 20px 0 20px 50px;
+	padding: 20px 0 20px 40px;
 	margin-bottom: 50px;
 	text-align: left;
 }
@@ -2323,13 +2323,17 @@ section.parallax-section .section-title:before {
 	z-index: 10;
 }
 .inline-facts-wrap {
-	float: left;
-	padding: 0 20px;
+	padding: 0 150px;
 	position: relative;
 	margin-right: 80px;
 	text-align: left;
 }
 .inline-facts-wrap .num {
+	font-size: 44px;
+	font-weight: 700;
+	color: #fff;
+}
+.education-title {
 	font-size: 44px;
 	font-weight: 700;
 	color: #fff;
@@ -2340,9 +2344,10 @@ section.parallax-section .section-title:before {
 	color: rgba(255, 255, 255, 0.51);
 	font-size: 10px;
 	font-weight: 500;
+	max-width: 30rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	padding: 12px 30px;
+	padding: 10px 30px;
 	background: rgba(51, 51, 51, 0.31);
 }
 .inline-facts-wrap h6:before {
@@ -3717,7 +3722,7 @@ section.parallax-section .section-title:before {
 }
 .half-slider-item,
 .fs-carousel-item {
-	cursor: move;
+	cursor: default;
 }
 /*-------------accordion---------------------------------------*/
 
