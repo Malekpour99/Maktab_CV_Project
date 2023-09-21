@@ -2326,6 +2326,7 @@ section.parallax-section .section-title:before {
 	padding: 0 150px;
 	position: relative;
 	margin-right: 80px;
+	margin-bottom: 40px;
 	text-align: left;
 }
 .inline-facts-wrap .num {
@@ -4754,6 +4755,23 @@ section.parallax-section .section-title:before {
 }
 .cus-inner-head-link:hover {
 	color:#666;
+}
+.cus2-inner-head-link {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 10px;
+	border-top-left-radius:6px;
+	border-bottom-right-radius: 6px;
+	text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.36);
+}
+.cus2-inner-head-link:hover {
+	color:#666;
+}
+.link-holder {
+	margin: 20px 0 10px;
 }
 .custom-inner h4 {
 	float: left;
