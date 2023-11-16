@@ -45,5 +45,19 @@ def index_view(request):
                 "skill_level": 94
             },
         ],
+        "language_skills": [
+            {
+                "language": "Persian",
+                "lang_level": 100
+            },
+            {
+                "language": "English",
+                "lang_level": 100
+            },
+            {
+                "language": "Deutsch",
+                "lang_level": 45
+            },
+        ]
     }
     return render(request, "website\index.html", {"resume": resume})
