@@ -323,31 +323,16 @@
                                         <!-- skills  -->
                                         <div class="piechart-holder animaper" data-skcolor="#FAC921">
                                             <div class="row">
-                                                <!-- 1  -->
-                                                <div class="piechart">
-                                                    <span class="chart" data-percent="95">
-                                                    <span class="percent"></span>
-                                                    </span>
-                                                    <h4>Front-End</h4>
-                                                </div>
-                                                <!-- 1 end -->
-                                                <!-- 2  -->
-                                                <div class="piechart">
-                                                    <span class="chart" data-percent="70">
-                                                    <span class="percent"></span>
-                                                    </span>
-                                                    <h4>Back-End</h4>
-                                                </div>
-                                                <!-- 2 end  -->
-                                                <!-- 3  -->
-                                                <div class="piechart">
-                                                    <span class="chart" data-percent="60">
-                                                    <span class="percent"></span>
-                                                    </span>
-                                                    <div class="clearfix"></div>
-                                                    <h4>Databases</h4>
-                                                </div>
-                                                <!-- 3  end-->
+                                                {% for area_skill in resume.area_skills %}
+                                                    <!-- area-skill  -->
+                                                    <div class="piechart">
+                                                        <span class="chart" data-percent="{{ area_skill.skill_level }}">
+                                                        <span class="percent"></span>
+                                                        </span>
+                                                        <h4>{{ area_skill.area }}</h4>
+                                                    </div>
+                                                    <!-- area-skill end -->
+                                                {% endfor %}
                                             </div>
                                         </div>
                                     </div>
@@ -368,42 +353,15 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="skillbar-box animaper">
-                                            <!-- skill 1-->
-                                            <div class="custom-skillbar-title"><span>Python</span></div>
-                                            <div class="skill-bar-percent">96%</div>
-                                            <div class="skillbar-bg" data-percent="96%">
+                                            {% for programming_skill in resume.programming_skills %}
+                                            <!-- programming-skill-->
+                                            <div class="custom-skillbar-title"><span>{{ programming_skill.language }}</span></div>
+                                            <div class="skill-bar-percent">{{programming_skill.skill_level}}%</div>
+                                            <div class="skillbar-bg" data-percent="{{programming_skill.skill_level}}%">
                                                 <div class="custom-skillbar"></div>
                                             </div>
-                                            <!-- skill 2-->
-                                            <div class="custom-skillbar-title"><span>Vue-JS / Vuex / VueRouter</span></div>
-                                            <div class="skill-bar-percent">90%</div>
-                                            <div class="skillbar-bg" data-percent="90%">
-                                                <div class="custom-skillbar"></div>
-                                            </div>
-                                            <!-- skill 3-->
-                                            <div class="custom-skillbar-title"><span>Django</span></div>
-                                            <div class="skill-bar-percent">70%</div>
-                                            <div class="skillbar-bg" data-percent="70%">
-                                                <div class="custom-skillbar"></div>
-                                            </div>
-                                            <!-- skill 4-->
-                                            <div class="custom-skillbar-title"><span>JavaScript / TypeScript</span></div>
-                                            <div class="skill-bar-percent">86%</div>
-                                            <div class="skillbar-bg" data-percent="86%">
-                                                <div class="custom-skillbar"></div>
-                                            </div>
-                                            <!-- skill 5-->
-                                            <div class="custom-skillbar-title"><span>HTML5</span></div>
-                                            <div class="skill-bar-percent">100%</div>
-                                            <div class="skillbar-bg" data-percent="100%">
-                                                <div class="custom-skillbar"></div>
-                                            </div>
-                                            <!-- skill 6-->
-                                            <div class="custom-skillbar-title"><span>CSS / SCSS / SASS</span></div>
-                                            <div class="skill-bar-percent">94%</div>
-                                            <div class="skillbar-bg" data-percent="94%">
-                                                <div class="custom-skillbar"></div>
-                                            </div>
+                                            <!-- programming-skill end -->
+                                            {% endfor %}
                                         </div>
                                     </div>
                                 </div>
